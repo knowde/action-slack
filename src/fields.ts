@@ -107,6 +107,7 @@ export class FieldFactory {
       owner: context.repo.owner,
       repo: context.repo.repo,
       run_id: context.runId,
+      per_page: 100
     });
     const currentJob = resp?.data.jobs.find(job =>
       this.isCurrentJobName(job.name),
@@ -144,6 +145,7 @@ export class FieldFactory {
       owner,
       repo: context.repo.repo,
       run_id: context.runId,
+      per_page: 100
     });
     const currentJob = resp?.data.jobs.find(job =>
       this.isCurrentJobName(job.name),
